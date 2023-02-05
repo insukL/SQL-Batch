@@ -1,0 +1,53 @@
+{
+  "path": {
+    "logs": "external-vol/logs",
+    "sql": "external-vol/sql",
+    "result": "external-vol/result",
+    "config": "external-vol/config",
+    "backup": "external-vol/backup"
+  },
+  "ip": {
+    "internal": []
+  },
+  "express": {
+    "port": 3311
+  },
+  "keyManager": {
+  },
+  "db": {
+    "c_apply": {
+      "host": "",
+      "port": 5432,
+      "username": "",
+      "password": "",
+      "database": "",
+      "timezone": "+09:00",
+      "dialect": "postgres",
+      "logging": false,
+      "minifyAliases": true
+    },
+    "c_member": {
+      "host": "",
+      "port": 5432,
+      "username": "",
+      "password": "",
+      "database": "",
+      "timezone": "+09:00",
+      "dialect": "postgres",
+      "logging": false,
+      "minifyAliases": true
+    },
+    "c_transfer": {
+      "host": "",
+      "port": 5432,
+      "username": "",
+      "password": "",
+      "database": "",
+      "timezone": "+09:00",
+      "dialect": "postgres",
+      "logging": false,
+      "minifyAliases": true
+    }
+  },
+  "banWord": ["INSERT", "DELETE", "UPDATE"]
+}

@@ -1,0 +1,58 @@
+{
+  "path": {
+    "logs": "logs",
+    "sql": "static/sql",
+    "result": "static/csv",
+    "config": "static/config",
+    "backup": "static/backup"
+  },
+  "ip": {
+    "internal": ["0.0.0.0/0"]
+  },
+  "keyManager": {
+  },
+  "db": {
+    "c_apply": {
+      "host": "127.0.0.1",
+      "port": 5432,
+      "username": "postgres",
+      "password": "",
+      "database": "c_apply",
+      "timezone": "+09:00",
+      "pool": {
+        "max": 2,
+        "min": 1,
+        "acquire": 30000,
+        "idle": 10000
+      }
+    },
+    "c_member": {
+      "host": "127.0.0.1",
+      "port": 5432,
+      "username": "",
+      "password": "",
+      "database": "c_member",
+      "timezone": "+09:00",
+      "pool": {
+        "max": 2,
+        "min": 1,
+        "acquire": 30000,
+        "idle": 10000
+      }
+    },
+    "c_transfer": {
+      "host": "127.0.0.1",
+      "port": 5432,
+      "username": "postgres",
+      "password": "",
+      "database": "c_transfer",
+      "timezone": "+09:00",
+      "pool": {
+        "max": 2,
+        "min": 1,
+        "acquire": 30000,
+        "idle": 10000
+      }
+    }
+  }
+}
